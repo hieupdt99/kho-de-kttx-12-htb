@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ôn tập &amp; giải chi tiết Đề KTTX3 — Toán 12</title>
+  <title>Ôn tập &amp; Giải chi tiết Đề KTTX lần 3 — Toán 12 | THPT Hồ Thị Bi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -2489,7 +2489,7 @@
 
       function renderSidebar() {
         const exam = getCurrentExam();
-        document.getElementById('sidebarExamTitle').textContent = `Mục lục ${exam.title}`;
+        document.getElementById('sidebarExamTitle').textContent = 'Danh sách câu hỏi';
         const container = document.getElementById('sidebarNavContainer');
         container.innerHTML = '';
 
@@ -2501,10 +2501,10 @@
           title.className = 'nav-group-title';
           const shortTitle =
             part.part_id === 'I'
-              ? 'Phần I · Trắc nghiệm (1–12)'
+              ? 'Phần I · Trắc nghiệm'
               : part.part_id === 'II'
-                ? 'Phần II · Đúng / Sai (1–3)'
-                : 'Phần III · Trả lời ngắn (1–4)';
+                ? 'Phần II · Đúng / Sai'
+                : 'Phần III · Trả lời ngắn';
           title.textContent = shortTitle;
           group.appendChild(title);
 
